@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    p::first-letter{
+        font-size: 60px;
+        color: red;
+    }
+    p:hover{
+        color: red;
+    }
+    div{
+        margin-top: 20px;
+        border: 2px solid lime;
+        padding: 1.25em;
+        position: relative;
+    }
+    p::before{
+        content: "teste ";
+    }
+    p::after{
+        width: 20px;
+        height: 20px;
+        content: "";
+        background-color: lime;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    input[type="text"]{
+        border: none;
+        outline: none;
+    }
+    input::placeholder{
+        background-color: red;
+    }
+</style>
+
+<body>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sed! Cumque tempora, sint non voluptas
+            architecto molestias alias soluta possimus, harum error pariatur fuga quisquam ea voluptatem! Quos dolore
+            neque optio voluptatum ipsum vel sint molestias ratione debitis ex minus, iusto nesciunt at magnam vitae
+            quis accusantium atque inventore. Natus.</p>
+
+            <input type="text" list="service" placeholder="aula">
+            <datalist id="service">
+                <option value="html"></option>
+                <option value="html"></option>
+                <option value="html"></option>
+                <option value="html"></option>
+            </datalist>
+
+    </div>
+
+</body>
+
+</html>

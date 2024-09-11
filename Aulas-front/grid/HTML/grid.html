@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: arial;
+        }
+
+        .grid_contianer {
+            background-color: bisque;
+            border: 2px solid gray;
+            margin: 0 auto;
+            margin-top: 1em;
+            padding: 10px;
+            max-width: 400px;
+
+            display: grid;
+            gap: 1em;
+        }
+
+        h1 {
+            background-color: #f3f3f3;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .item {
+            background-color: tomato;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .grid_columns {
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(100px, auto));
+        }
+
+        .grid_rows .item {
+            background-color: dodgerblue;
+            color: #fff;
+        }
+
+        .grid_rows {
+            grid-template-rows: 100px;
+        }
+
+        .grid_rows_columns .item {
+            background-color: aquamarine;
+        }
+
+        .grid_rows_columns {
+            grid-template-columns: 100px auto 50px;
+            grid-template-rows: 50px 200px 50px;
+        }
+
+        .grid_area .item {
+            background-color: lime;
+        }
+
+
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .sidenav {
+            grid-area: sidenav;
+        }
+
+        .advert {
+            grid-area: advert;
+        }
+
+        .logo {
+            grid-area: logo;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .grid_area {
+            grid-template-areas:
+                "nav nav nav"
+                "footer content content"
+                "advert logo sidenav"
+            ;
+        }
+        .grid-1{
+            grid: "logo logo nav" 80px
+            "content content advert" 150px
+            "sidenav footer footer" 30px
+            /100px 2fr 1fr;
+
+            & .item{
+                background-color: purple;
+                color: #f3f3f3;
+            }
+        }
+
+        .grid-exemplo{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2, 100px);
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>GRID</h1>
+
+    <h2>Demonstração de grid-templete-columns</h2>
+
+    <section class="grid_contianer grid_columns">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <hr>
+    <h2>Demonstração de grid-template-rows</h2>
+    <section class="grid_contianer grid_rows">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <hr>
+    <h2>Demonstração de grid-template-rows + grid-template-columns</h2>
+    <section class="grid_contianer grid_rows_columns">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <hr>
+    <h2>Demonstração de grid-template-area</h2>
+    <section class="grid_contianer grid_area">
+        <div class="item logo">Logo</div>
+        <div class="item nav">Nav</div>
+        <div class="item content">content</div>
+        <div class="item sidenav">sidenav</div>
+        <div class="item advert">advert</div>
+        <div class="item footer">footer</div>
+    </section>
+
+    <hr>
+    <h2>grid</h2>
+    <section class="grid_contianer grid_area grid-1">
+        <div class="item logo">Logo</div>
+        <div class="item nav">Nav</div>
+        <div class="item content">content</div>
+        <div class="item sidenav">sidenav</div>
+        <div class="item advert">advert</div>
+        <div class="item footer">footer</div>
+    </section>
+
+    <hr>
+    <h2>grid-exemplo</h2>
+    <section class="grid_contianer grid-exemplo grid-area">
+        <div class="item logo">Logo</div>
+        <div class="item nav">Nav</div>
+        <div class="item content">content</div>
+        <div class="item sidenav">sidenav</div>
+        <div class="item advert">advert</div>
+        <div class="item footer">footer</div>
+    </section>
+</body>
+
+</html>

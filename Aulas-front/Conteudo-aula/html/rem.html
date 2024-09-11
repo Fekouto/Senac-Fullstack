@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ccc;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            color: #ccc;
+            background-color: red;
+        }
+        header nav ul{
+            display: flex;
+            gap: 1em;
+            list-style-type: none;
+        }
+        nav ul a{
+            color: #ccc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 2rem;
+        }
+        main section{
+            display: flex;
+            width: 57vw;
+            height: 60vh;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-right: 2rem;
+        }
+
+        .card{
+            width: 25vw;
+            height: 21vh;
+            background-color: rgb(7, 107, 140);
+            color: #ccc;
+            border-radius: 5px;
+            padding: 1rem;
+        }
+        main aside{
+            width: 30vw;
+            height: 48vh;
+            background-color: darkgoldenrod;
+            border-radius: 5px;
+            padding: 2rem;
+        }
+        footer{
+            background-color: green;
+            color: #ccc;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+<header>
+    <h1>Meu Site</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <article class="card">
+            <h2>card 1</h2>
+            <p>Conteúdo do card 1</p>
+        </article>
+        <article class="card">
+            <h2>card 2</h2>
+            <p>Conteúdo do card 2</p>
+        </article>
+        <article class="card">
+            <h2>card 3</h2>
+            <p>Conteúdo do card 3</p>
+        </article>
+        <article class="card">
+            <h2>card 4</h2>
+            <p>Conteúdo do card 4</p>
+        </article>
+    </section>
+
+    <aside>
+        <h2>Barra Lateral</h2>
+        <p>Conteúdo da barra lateral</p>
+    </aside>
+</main>
+
+<footer><p>Rodapé da página</p></footer>
+
+</body>
+</html>

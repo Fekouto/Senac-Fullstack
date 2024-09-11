@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body,html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        background-color: #e0e0e0;
+        
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        
+    }
+    .header,.main,.footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        color: #fff;
+        font-size: 24px;
+    }
+    .header{
+        background-color: #4caf50;
+    }
+    .main{
+        background-color: #2196f3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        overflow-y: auto;
+    }
+    .footer{
+        background-color: #f44336;
+
+    }
+    .card{
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px;
+        width: 200px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+</style>
+<body>
+    
+    <div class="conteiner">
+        <header class="header">cabeçalho</header>
+        <main class="main">
+            <div class="card">card1</div>
+            <div class="card">card2</div>
+            <div class="card">card3</div>
+            <div class="card">card4</div>
+            <div class="card">card5</div>
+            <div class="card">card6</div>
+        </main>
+        <footer class="footer">rodape</footer>
+    </div>
+
+</body>
+</html>

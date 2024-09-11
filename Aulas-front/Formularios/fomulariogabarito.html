@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: #95a5a6;
+            font-family: "helvetica neue", Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px #333;
+            padding: 1em;
+            width: 350px;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        input,
+        label {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+
+        label {
+            margin-bottom: .25em;
+        }
+
+        input {
+            border: 1px solid #bbb;
+            border: 5px;
+            font-size: 1em;
+            margin-bottom: 1.5em;
+            padding: .75em;
+        }
+
+        legend {
+            color: #333;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: .5em;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: darkblue;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btn2 {
+            background-color: darkred;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Login</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend style="text-align: center;">Entre com seus dados</legend>
+
+            <label for="user">Usuário</label>
+            <input type="text" required id="user" autofocus placeholder="Digite seu Nome">
+            <!-- autofocus quando atualizar a pagina fazer o curso clicar sempre -->
+
+            <label for="password">Senha</label>
+            <input type="password" required id="password" placeholder="Digite sua senha" minlength="8">
+
+            <div class="actions">
+                <input class="btn2" type="reset" value="APAGAR">
+                <!-- value serve para voce colocar o vc quer escrito no input de reset -->
+                <input class="btn" type="submit" value="ENVIAR">
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

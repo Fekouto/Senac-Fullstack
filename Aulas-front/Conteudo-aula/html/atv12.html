@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        table{
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            font-family: arial;
+        }
+        body{
+            background-color: #9a9a9a;
+        }
+        thead th{
+            background-color: rgb(0,216,0);
+            padding: 1em;
+            color: #fff;
+        }
+        caption{
+            font-size: xx-large;
+            color: blue;
+            text-shadow: 2px 2px 10px black;
+            padding: 1em;
+        }
+        body td{
+            padding: 1em;
+            border-top: 1px solid rgba(128, 128, 128, 0.5);
+        }
+        .bordas{
+            background-color: lime;
+            border-bottom: 1px solid #fff;
+        }
+        .estoque{
+            background-color: lightgreen;
+            text-align: center;
+            padding: 1em;
+            color: green;
+        }
+        .marcas{
+            background-color: lightblue;
+        }
+        .valores{
+            background-color: #fff;
+        }
+        tr:nth-child(odd){
+            background-color: rgb(189, 189, 189);
+        }
+        tr:nth-child(even){
+            background-color: rgb(0, 189, 196);
+        }
+        tbody tr:hover{
+            background-color: rgb(61,61,61);
+            color: red;
+        }
+    </style>
+    
+<table>
+    <caption>Tabela de Comparação de Produtos</caption>
+
+    <thead>
+        <tr>
+            <th rowspan="2">Produdo</th>
+            <th colspan="2" class="bordas">Características</th>
+            <th colspan="2" class="bordas">Preço</th>
+            <th rowspan="2">Disponibilidade</th>
+        </tr>
+        <tr>
+            <th>Categoria</th>
+            <th>Marca</th>
+            <th>Valor à Vista</th>
+            <th>Valor a Prazo</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="alternado">Notebook</td>
+            <td class="alternado">Eletrônicos</td>
+            <td class="marcas">Dell</td>
+            <td class="valores">R$ 3200.00</td>
+            <td class="valores">R$ 3500.00</td>
+            <td class="estoque">Em estoque</td>
+        </tr>
+        <tr>
+            <td>Smartphone</td>
+            <td>Eletrônicos</td>
+            <td class="marcas">Samsung</td>
+            <td class="valores">R$ 1400.00</td>
+            <td class="valores">R$ 1500.00</td>
+            <td class="estoque">Em estoque</td>
+        </tr>
+        <tr>
+            <td class="alternado">Geladeira</td>
+            <td class="alternado">Eletrodomésticos</td>
+            <td class="marcas">LG</td>
+            <td class="valores">R$ 1800.00</td>
+            <td class="valores">R$ 2000.00</td>
+            <td class="estoque">Fora de estoque</td>
+        </tr>
+        <tr>
+            <td>Fogão</td>
+            <td>Eletrodomésticos</td>
+            <td class="marcas">Brastemp</td>
+            <td class="valores">R$ 1100.00</td>
+            <td class="valores">R$ 1200.00</td>
+            <td class="estoque">Em estoque</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

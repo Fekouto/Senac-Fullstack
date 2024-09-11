@@ -1,0 +1,118 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(#5d61f2,#27296b, #222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    min-height: 100vh;
+}
+.calculadora{
+    background-color: #ccc;
+    padding: 1em;
+    color: #fff;
+    display: grid;
+    gap: 1em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.501);
+    grid-template-rows: 70px;
+    grid-template-areas: 
+        "visor"
+        "teclas"
+    ;
+
+    .visor{
+        grid-area: visor;
+        width: 300px;
+        text-align: right;
+        padding: 0.3em;
+        border-radius: 5px;
+        border: 2px solid black;
+        background:linear-gradient(#353535, #1b1717);
+        align-content: center;
+    }
+    .teclas{
+        grid-area: teclas;
+        display: grid;
+        gap: 0.5em;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 60px 60px 60px 60px;
+
+        grid-template-areas: 
+            "ac divisao X barra"
+            "sete oito nove igual"
+            "quatro cinco seis menos"
+            "um dois tres mais"
+            "zero zero virgula mais"
+
+        ;
+
+        .zero{
+            grid-area: zero;
+        }
+        .AC{
+            grid-area: ac;
+        }
+        .divisao{
+            grid-area: divisao;
+        }
+        .um{
+            grid-area: um;
+        }
+        .dois{
+            grid-area: dois;
+        }
+        .tres{
+            grid-area: tres;
+        }
+        .quatro{
+            grid-area: quatro;
+        }
+        .cinco{
+            grid-area: cinco;
+        }
+        .seis{
+            grid-area: seis;
+        }
+        .sete{
+            grid-area: sete;
+        }
+        .oito{
+            grid-area: oito;
+        }
+        .nove{
+            grid-area: nove;
+        }
+        .X{
+            grid-area: X;
+        }
+        .barra{
+            grid-area: barra;
+        }
+        .igual{
+            grid-area: igual;
+        }
+        .menos{
+            grid-area: menos;
+        }
+        .mais{
+            grid-area: mais;
+            align-content: center;
+        }
+        .virgula{
+            grid-area: virgula;
+        }
+    }
+    .tecla{
+        background:linear-gradient(#353535, #1b1717);
+        padding: 1em;
+        text-align: center;
+        align-content: center;
+        border-radius: 5px;
+        border: 2px solid black;
+    }
+}

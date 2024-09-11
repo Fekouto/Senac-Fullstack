@@ -1,0 +1,102 @@
+html{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(32, 27, 27);
+}
+body{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+header .menu{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+}
+.menu a{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu a:hover{
+    background-color: greenyellow;
+    color: black;
+}
+.menu .especial{
+    background-color: greenyellow;
+    color: black;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+main .titulo{
+    display: flex;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0px 100px;   
+}
+hr{
+    color: greenyellow;
+    width: 100%;
+}
+main .card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(39, 39, 39);
+    height: 350px;
+    margin: 20px;
+    padding: 15px;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+}
+.card .principal{
+    text-transform: uppercase;
+}
+.valor h2, .valor p{
+    display: inline;
+}
+
+.footercard a{
+    background-color: yellowgreen;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(32, 27, 27);
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    justify-content: start;
+    align-items: start;
+}

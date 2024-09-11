@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/atividadeCadastro.css">
+</head>
+<body>
+
+    <form action="#" method="get">
+
+        <h1>Cadastro de Paciente</h1>
+
+        <fieldset>
+
+            <legend>Informações Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" required id="nome">
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="#" id="sobrenome" required>
+
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" required>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero" required>
+                <option value="genero">Masculino</option>
+                <option value="genero">Feminino</option>
+                <option value="genero">Outros...</option>
+                <option value="genero"disabled>Selecione uma opção</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Contato</legend>
+
+            <label for="email">Email</label>
+            <input type="email" required>
+
+            <label for="numero">Número</label>
+            <input type="number" required minlength="9">
+
+            <label for="endereço">Endereço</label>
+            <input type="text" required>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Histórico Médico</legend>
+
+            <label for="text">Você possui alguma alergia:</label>
+            <div class="opcoes">
+            <label for="alergia"><input type="radio" id="alergia" name="alergia" value="yes"> Sim</label>
+            <label><input type="radio" id="alergia" name="alergia" value="no"> Não</label>
+            </div>
+
+            <label for="explicacaoSim">Se sim,por favor, especifique:</label>
+            <textarea name="#" id="explicacao" cols="100%" rows="5"></textarea>
+            
+            <label for="remedios">Você está tomando algum medicamento atualmente?</label>
+            <textarea name="#" id="explicacao" cols="100%" rows="5"></textarea>
+
+            <label for="historico">Histórico Médico</label>
+            <textarea name="#" id="explicacao" cols="100%" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Preferências</legend>
+
+            <label for="contato">Preferências de Contato</label>
+
+            <div>
+                <label for="op1"><input type="checkbox" id="contato" value="1"> Email</label>
+                <label for="op2"><input type="checkbox" id="contato" value="1"> Telefone</label>
+                <label for="op3"><input type="checkbox" id="contato" value="1"> SMS</label>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Registrar" class="registrar">
+
+    </form>
+    
+</body>
+</html>

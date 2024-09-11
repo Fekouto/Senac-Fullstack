@@ -1,0 +1,107 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#f5f5f5;
+    color:#f5f5f5;
+    font-family:arial;
+    height: 100vh;
+}
+
+.header_principal{
+    background-color: orangered;
+    text-align:center;
+    padding:3em;
+    margin-bottom:16px;
+}
+
+main{
+
+    & .section_opcoes{
+        background-color:#333;
+        padding:25px 16px 17px;
+
+        & .opcoes{
+            background-color:#444;
+            border-radius:5px;
+            padding: 16px;
+            margin-bottom:8px;
+        }
+
+        & .opcoes:hover{
+            background-color:#f5f5f5;
+            color:#444
+        }
+
+    }
+
+    & .section_cards{
+        padding:2em 1em 1em;
+        display:grid;
+        gap:20px;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        background-color: #f5f5f5;
+
+        & .cards{
+            background-color: rgb(93, 93, 255);
+            border-radius:5px;
+            padding:20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        & .cards:hover{
+            transform:scale(1.05);
+            background-color:darkblue;
+            transition:0.6s ease-in-out;
+        }
+    }
+
+    & .section_cards_2{
+        padding:16px;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        grid-template-rows: 1fr;
+
+        & .cards_2{
+            background-color: darkorange;
+            border-radius:5px;
+            padding: 16px;
+
+            & .header_cards_2,.footer_cards_2{
+                background-color:#333;
+                padding:10px;
+                text-align: center;
+            }
+
+            & p{
+                color: #333;
+                margin: 25px 0;
+            }
+
+        }
+
+    }
+
+}
+
+footer{
+    text-align: center;
+    align-content:center;
+    background-color:green;
+    padding:48px;
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 900px) {
+    main .section_cards_2{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+

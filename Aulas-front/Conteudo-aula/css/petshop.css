@@ -1,0 +1,49 @@
+body{
+    background-image: url(../imagem/OPSEG70.jpg);
+    padding: 0px;
+    margin: 0px;
+    background-position: center;
+    background-size: cover;
+}
+
+.tudo{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    background-color: rgba(255, 255, 255, 0.632);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+
+.menu ul{
+    text-align: center;
+    margin-top: 50px;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu a{
+    padding: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #415361;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    padding: 15px 10px;
+    border: 1px solid #415361;
+    border-radius: 10px;
+    margin: auto 10px;
+}
+.menu a:hover{
+    background-color: #415361;
+    color: rgba(255, 255, 255, 0.632)
+}
+.principal h1{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#C67B57;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

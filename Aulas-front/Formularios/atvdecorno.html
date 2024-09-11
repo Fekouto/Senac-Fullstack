@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 50%;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            background-color: #555;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            width: 100%;
+            background-color: #222;
+            border-radius: 10px;
+        }
+        legend{
+            margin-top: 1.5em;
+            text-align: center;
+            width: 100%;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        fieldset{
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            border: none;
+            min-height: 105vh;
+            justify-content: space-between;
+        }
+        
+        textarea,input:invalid:focus{
+            border-bottom: 2px solid red;
+        }
+        textarea,input:valid:focus{
+            border-bottom: 2px solid green;
+        }
+        input:not(.enviar),label,textarea{
+            border: none;
+            display: block;
+        }
+        input:not(.enviar),textarea{
+            background-color: #111;
+            color: #ccc;
+            border-bottom: 2px solid #fff;
+            padding: 1.5em;
+            margin-bottom: 2em;
+            outline: none;
+        }
+        .enviar{
+            align-self: self-start;
+            padding: 1.25em;
+            border-radius: 0;
+            border: none;
+            background-color: #333;
+            color: #fff;            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form action="" method="get">
+        <fieldset>
+
+            <legend style="text-align: center;">Formulário de Contato</legend>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required placeholder="Digite seu nome completo">
+
+            <label for="email">Email</label>
+            <input type="email" required placeholder="Digite um email válido">
+
+            <label for="assunto">Assunto</label>
+            <input type="text">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea name="" id="mensagem" placeholder="Digite sua mensagem" rows="10" cols="60" required minlength="15"></textarea>
+
+            <input class="enviar" type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            width: 70%;
+            margin: auto;
+        }
+
+        header {
+            margin-top: 40px;
+            /* border: 1px solid black; */
+            background-color: green;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        main {
+            background-color: rgb(126, 126, 255);
+            color: #fff;
+            overflow-y: auto;
+            height: 700px;
+        }
+        .flexbox{ 
+            display: grid;
+            grid-template-columns: max-content;
+            /* grid-template-rows: max-content; */
+            border: 2px solid black;
+        }
+        .bloco_branco {
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            padding: 130px;
+            margin: 30px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: red;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        html{
+            background-color: black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <section>
+
+        <header>
+
+            <div>
+                <h1>Cabeçalho</h1>
+            </div>
+
+        </header>
+
+        <main>
+            <div class="flexbox">
+
+                <div class="bloco_branco">teste</div>
+                <div class="bloco_branco">teste</div>
+                <div class="bloco_branco">teste</div>
+                <div class="bloco_branco">teste</div>
+                <div class="bloco_branco">teste</div>
+                <div class="bloco_branco">teste</div>
+                <div class="bloco_branco">teste</div>
+                <div class="bloco_branco">teste</div>
+                <div class="bloco_branco">teste</div>
+                
+            </div>
+        </main>
+
+        <footer>
+            <h1>Rodapé</h1>
+        </footer>
+
+    </section>
+
+</body>
+
+</html>

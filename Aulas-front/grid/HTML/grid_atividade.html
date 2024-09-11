@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            font-family: arial;
+            line-height: 1.6;
+            padding: 1.25em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header   header"
+                "sidebar content"
+                "footer   footer"
+            ;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr;
+            max-width: 1200px;
+            gap: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #333;
+            color: #fff;
+            padding: 1.25em;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: red;
+            margin: 10px auto 0 auto;
+        }
+
+        .nav_bar {
+            margin-top: 1.25em;
+        }
+
+        .menu {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.25em;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            display: block;
+            background-color: #555;
+            border-radius: 5px;
+            transition: backgroud-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #777;
+        }
+
+        .menu li::after {
+            content: "";
+            position: absolute;
+            background-color: red;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+
+        .menu li:hover::after {
+            transform: scalex(1);
+            transform-origin: left;
+        }
+
+        .content{
+            grid-area: content;
+            display: grid;
+            grid-template-areas:
+                "section1"
+                "section2"
+                "section3"
+            ;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 1.25em;
+        }
+        .section1{
+            grid-area: section1;
+        }
+        .section2{
+            grid-area: section2;
+        }
+        .section3{
+            grid-area: section3;
+        }
+        .section {
+            background-color: #f9f9f9;
+            padding: 1.25em;
+            border: 1px solid #ddd;
+        }
+
+        .side_bar{
+            grid-area: sidebar;
+            background-color: #555;
+            color: #fff;
+            padding: 1.25em;
+        }
+        .footer{
+            background-color: #333;
+            grid-area: footer;
+            color: #fff;
+            padding: 1.25em;
+            text-align: center;
+            border-radius: 8px;
+        }
+        @media screen and (max-width: 48em){
+            .container{
+                grid-template-areas: 
+                
+                "header "
+                "content"
+                "sidebar"
+                "footer"
+                ;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto auto;
+            }
+
+            .content{
+                grid-template-areas: 
+                "section1"
+                "section2"
+                "section3"
+                ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Grid</h1>
+            <nav class="nav_bar">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Serviços</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="side_bar">
+            Barra lateral
+        </aside>
+        <main class="content">
+            <section class="section section1"> Seção 1</section>
+            <section class="section section2"> Seção 2</section>
+            <section class="section section3"> Seção 3</section>
+        </main>
+        <footer class="footer">Rodape</footer>
+    </div>
+
+</body>
+
+</html>

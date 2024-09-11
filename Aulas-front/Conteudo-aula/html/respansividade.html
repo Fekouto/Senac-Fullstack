@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        a::after{
+            content: "(" attr(href) ") - (" attr(title) ")";
+            display: inline-block;
+            margin-left: .5em;
+        }
+        .only{
+            background-color: blue;
+        }
+        @media screen and (max-width: 600px) {
+            .only{
+                background-color: red;
+            }
+        }
+        @media  screen and (min-width:700px){
+            .only{
+                background-color: red;
+            }
+        }
+    
+    </style>
+</head>
+<body class="only">
+    
+    <h1>Media Types</h1>
+
+    <a href="https://www.senac.com.br/" title="CURSO FULLSTACK">Senac</a>
+
+</body>
+</html>

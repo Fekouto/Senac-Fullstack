@@ -1,0 +1,27 @@
+@media screen and (max-width: 1300px) {
+    main .section_cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main .section_cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .section_cards_2{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    main .section_cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}

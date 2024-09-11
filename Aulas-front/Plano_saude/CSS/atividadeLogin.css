@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #4CAF50;
+    width: 40%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    background-color: #fff;
+    width: 90%;
+    height: 45vh;
+    padding: 1.5em;
+    border-left: 6px solid #185b1adb;
+    border-radius: 5px;
+}
+.form_cadastro{
+    height: 50vh;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+label{
+    color: #888;
+    margin-bottom: 0.5em;
+    font-size: 10px;
+}
+input:not(.submit){
+    border: none;
+    border-bottom: 1px solid #888;
+    margin-top: 1em;
+    margin-bottom: 0.75em;
+    outline: none;
+}
+input:not(.submit):focus{
+    padding-left: 0.75em;
+    padding-bottom: 0.5em;
+}
+input:not(.submit):focus:valid{
+    border-bottom: 2px solid lime;
+    transition: 0.5s;
+}
+input:not(.submit):focus:invalid{
+    border-bottom: 2px solid red;
+    transition: 0.5s;
+}
+legend{
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 1em;
+}
+.footer_login{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+    width: 100%;
+    justify-content: space-between;
+}
+.footer_login .inicio{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+.footer_login div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+.submit{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px; 
+}
+.footer_login p{
+    font-size: 14px;
+    justify-self: end;
+}

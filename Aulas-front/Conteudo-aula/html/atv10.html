@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .scroll{
+            width: 100%;
+            overflow: auto;
+        }
+        table{
+            margin: auto;
+            width: 80%;
+            border-collapse: collapse;
+            /* background-color: ; */
+        }
+        th{
+            background-color:#ccc;
+        }
+        td{
+           background-color: #e1e1e1a7;
+           border: 2px solid gray;
+           text-align: center;
+        }
+        tbody td{
+            padding: .5em;
+        }
+        tbody td:hover{
+            background-color: gray;
+            border: 2px solid #e1e1e1a7;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- TRABALHANDO COM LISTAS ALINHADAS -->
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+            <ul>
+                <li>Item 2.1</li>
+                <li>Item 2.2</li>
+            </ul>
+            <li>Item 3</li>
+
+    </ul>
+    <!-- TRABALHANDO COM LISTAS DE DEFINIÇÃO -->
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>hipertext markup language</dd>
+        <dd>usado para criar paginas na web</dd>
+        <dt>CSS</dt>
+        <dd>cascating style sheet </dd>
+    </dl>
+
+    <!-- TRABALHANDO COM DETAILS -->
+    <!-- <h1>CURSO FULLSTACK</h1>
+    <details>
+        <summary>
+            PRE-REQUISITOS
+        </summary>
+        <p>Para fazer esse curso é necessario atrnder os pre-requisitos a seguir</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVA</li>
+        </ul>
+    </details> -->
+    <div class="scroll">
+
+        <table>
+            <caption>titulo</caption>
+    
+            <thead>
+                <tr>
+                    <th>Plano basico</th>
+                    <th>plano vip</th>
+                    <th>plano premium</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Desing</td>
+                    <td>indesing</td>
+                    <td>1000</td>
+                </tr>
+    
+                <tr>
+    
+                    <td>Photishop</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+    
+                    <td>Ilustrator</td>
+                    <td>1000</td>
+                </tr>
+    
+                <tr>
+                    <td rowspan="4">Development</td>
+                    <td>html</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>css</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>php</td>
+                    <td>1000</td>
+                </tr>
+            </tbody>
+    
+            <tfoot>
+                <tr><td colspan="3">valores sujeitos a alteração sem aviso previo</td></tr>
+            </tfoot>
+    </div>
+
+
+    </table>
+</body>
+</html>
