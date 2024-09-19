@@ -8,7 +8,6 @@ while(contador<valor){
     }
     contador++;
 }
-
 if(controle==0){
     alert('esse numero eh primo')
 }else{
