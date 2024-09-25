@@ -1,5 +1,4 @@
-let frase = prompt("coloque seu nome completo: ");
-document.querySelector('#nome').innerHTML = frase
+let frase = ("coloque seu nome completo: ");
 console.log(frase.length);
 console.log(frase.toLowerCase());
 console.log(frase.toUpperCase());
