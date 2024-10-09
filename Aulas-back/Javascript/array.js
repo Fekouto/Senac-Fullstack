@@ -14,5 +14,6 @@ console.log(numeros)
 alunos.sort()
 console.log(alunos)
 console.log(numeros.reverse())
+console.log(numeros.slice(-1))
 
 

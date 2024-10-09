@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="title">Exemplo 01 - DOM</h1>
+
+    <main class="cmain" id="idmain">
+        <h2>Subtitulo</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, perspiciatis!</p>
+    </main>
+
+    <section class="csection" id="idsection">
+        <h3>subtitulo</h3>
+        <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, veritatis.</p>
+    </section>
+
+    <script>
+
+        (function(){
+
+            const nomeUsuario = 'Felipe'
+            const elemento = document.querySelector('.cmain')
+
+            elemento.innerHTML += "<b>" + nomeUsuario + "</b>"
+
+        })()
+
+    </script>
+
+</body>
+</html>
+
+<!-- Quando vc trabalha com documentsbyid vc tem que passar entre parateses e aspas o valor do seu id
+ se for com documenteelementsbyclassname precisa passar o indice,parece um array mas n eh -->

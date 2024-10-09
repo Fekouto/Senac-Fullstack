@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <label for="txtEmail">Email</label>
+        <input type="email" id="txtEmail" placeholder="DIgite seu email">
+
+        <button id="btn" onclick="cadastrarEmail(event)">Enviar</button>
+    </form>
+
+    <div id="feedbak"></div>
+
+    <script>
+
+        function cadastrarEmail(event){
+
+            event.preventDefault();
+
+            const txtEmail = document.getElementById("txtEmail").value;
+            const msgFeedback = document.getElementById("feedback");
+            msgFeedback.innerHTML = `o email é ${txtEmail}`;
+
+        }
+
+    </script>
+
+</body>
+</html>
