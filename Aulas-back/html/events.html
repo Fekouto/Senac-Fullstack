@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Created</h1>
+
+    <div id="conteudo">
+        Conteudo
+    </div>
+
+    <ul id="itens">
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="chance()">Mudar</button>
+
+    <script>
+
+        // const obj = document.getElementById('conteudo')
+        const alvo = document.getElementById('itens')
+        const li = document.createElement('li')
+        const texto = document.createTextNode('item 3')
+
+        function adicionar(){
+          li.appendChild(texto)
+          alvo.insertBefore(li,alvo.children[0])
+        }
+
+        function chance(){
+            obj.innerHTML = 'Felipe'
+        }
+
+    </script>
+
+</body>
+</html>

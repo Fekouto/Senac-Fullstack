@@ -1,32 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../html/css/fucao.css">
 </head>
+
 <body>
 
     <div class="titulo">
         <h1>Função área do Triângulo</h1>
     </div>
-    
-    <form action="" method="get">
-        <fieldset>
-            <div>
-                <div class="entradas">
-                    <label>Base</label>
-                    <input type="number" id="base">
-                    <label>Altura</label>
-                    <input type="number" id="altura">
-                </div>
-                <div class="botao">
-                    <button>Calcular a área</button>
-                </div>
+
+    <main>
+        <div class="visor">
+            <form>
+                <fieldset>
+                    <div class="entrada">
+                        <label>Base</label>
+                        <input type="number" id="base">
+                        <label>Altura</label>
+                        <input type="number" id="altura">
+                    </div>
+                    <div class="butoes">
+                        <button id="botao" onclick="resultado(event)">Calcular a área</button>
+                        <button id="butao" onclick="limpar(event)">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="resultado">
+                <div id="resultado"></div>
             </div>
-        </fieldset>
-    </form>
+
+        </div>
+    </main>
+
+    <script>
+
+        const saida = document.getElementById("resultado")
+
+        function resultado(event){
+
+            event.preventDefault();
+
+            saida.innerHTML = ""
+
+            const base = document.getElementById("base").value
+            const altura = document.getElementById("altura").value
+
+            if(base*altura/2 == 0){
+                saida.innerHTML= `Na entrada ou colocou um valor invalido ou 0`
+            }else{
+                saida.innerHTML= `A área do seu triangulo é ${base*altura/2}`
+            }
+
+        }
+
+        function limpar(event){
+
+            event.preventDefault();
+
+            saida.innerHTML=""
+
+            base.value = ""
+            altura.value = ""
+
+        }
+
+    </script>
+
 
 </body>
+
 </html>

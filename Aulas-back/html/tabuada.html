@@ -9,27 +9,66 @@
 </head>
 
 <body>
+
     <div class="titulo">
         <h1>Tabuada</h1>
     </div>
-    <div class="teste">
-        <div>
-            <form action="" method="get">
+
+    <main>
+        <div class="visor">
+            <form>
                 <fieldset>
                     <div class="entrada">
-                        <input type="number" placeholder="Insira um valor">
+                        <input type="number" placeholder="Insira um valor" id="entrada">
                     </div>
                     <div class="butoes">
-                        <button id="output">Mostrar tabela</button>
-                        <button id="delete">Limpar tabela</button>
+                        <button id="output" onclick="tabuada(event)">Mostrar tabela</button>
+                        <button id="delete" onclick="limpar(event)">Limpar tabela</button>
                     </div>
                 </fieldset>
         </div>
+        </form>
+    
         <div class="resultado">
             <p>Resultado</p>
+            <div id="resultado">
+            </div>
+    
         </div>
-    </div>
-    </form>
+    </main>
+
+
+    <script>
+        
+        const saida = document.getElementById("resultado");
+        
+        
+        function tabuada(event) {
+            
+            event.preventDefault();
+            
+            saida.innerHTML = ""
+            
+            const valor = document.getElementById("entrada").value;
+
+            for (let i = 0; i < 11; i++) {
+                saida.innerHTML += `${valor} x ${i} = ${valor * i}  <br>`
+            }
+
+        }
+
+        function limpar(event) {
+
+            event.preventDefault();
+
+            saida.innerHTML = ""
+        }
+
+
+    </script>
+
 </body>
+
+
 
 </html>
