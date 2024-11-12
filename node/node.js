@@ -27,12 +27,60 @@
 // const z = [1,2]
 // console.log(x,y,z)
 
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: porcess.stdout
+// const readline = require('readline').createInterface({
+//     input: process.stdin,
+//     output: porcess.stdout
 
-})
-readline.question('qual a sua linguagem preferida:',
-(language)=>{
-    console.log(`a minha linguagem preferida é c: ${language}`)
-})
+// })
+// readline.question('qual a sua linguagem preferida:',
+// (language)=>{
+//     console.log(`a minha linguagem preferida é c: ${language}`)
+// })
+
+// function a(){
+//     console.log('executando a()')
+// }
+// function b(){
+//     console.log('executando b()')
+// }
+// function c(){
+//     console.log('executando c()')
+//     a()
+//     b()
+// }
+
+// c()
+
+// const eventEmitter = require ('events')
+// const eventemitter = new eventEmitter()
+
+// eventemitter.on('start',() =>{
+//     console.log('durante')
+// })
+// console.log('antes')
+// eventemitter.emit('start')
+// console.log('depois')
+
+// const fs = require('fs')
+// console.log('inicio')
+// fs.writeFile('arquiv02.txt','teste',function(err){
+//     setTimeout(() => {
+//         console.log('arquivo criado')
+//     }, 2000);
+// })
+// console.log('fim')
+// const x = 10
+
+// if(!Number.isInteger(x)){
+//     throw new Error('o valor de x nao é um numero inteiro')
+// }
+// console.log('continuando o codigo')
+
+// const x = 10
+
+// try{
+//     x=10
+// }catch(err){
+//     console.log(`erro: ${err}`)
+// }
+// console.log('oi')
